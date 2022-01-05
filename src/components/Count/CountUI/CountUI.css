@@ -1,0 +1,58 @@
+.countUI {
+    font-family: Montserrat, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    height: 100vh;
+    border-color: rgb(92, 110, 104);
+    color: rgb(53, 49, 44);
+}
+.countUI p{
+    font-size: 120px;
+
+}
+.button__wrapper{
+    display: flex;
+    gap: 20px;
+
+}
+.button__wrapper button{
+    border: none;
+    border-color: blanchedalmond;
+    box-shadow: 0 0 10px #cfd8dc;
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    cursor: pointer;
+transition: background-color 250ms ease-in-out,transform 50ms ease-in-out;
+}
+.button__wrapper button:hover{
+background-color: #cfd8dc;
+}
+.button__wrapper button:active{
+    transform: scale(0.9);
+}
+.button__wrapper button:focus{
+    box-shadow:0 0 0 3px #425a65;
+}
+.negative{
+    color:rgb(75, 24, 24);
+    animation: pulse 500ms ease-in-out;
+}
+.active{
+    color:rgb(43, 65, 49);
+    animation: pulse 500ms ease-in-out;
+}
+@keyframes pulse{
+    0%,
+    100%{
+        transform:scale(1)
+    }
+    50%{
+        transform:scale(1,2)
+    }
+}
